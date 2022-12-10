@@ -1,14 +1,10 @@
-# Project
+# MediaWiki extensions developed by Microsoft
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
-
-As the maintainer of this project, please make a few updates:
-
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+Microsoft has developed a collection of MediaWiki extensions for use internally. Select extensions are
+currently being considered for open source release. These extensions will be made available under
+the MIT License. Volunteers who are employees of Microsoft are responsible for overseeing the open
+sourcing and maintenance of the extensions in conjunction with the original development team(s).
+Open source contributions from the community are welcome and will be subject to Microsoft's CLA.
 
 ## Contributing
 
