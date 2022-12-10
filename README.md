@@ -1,10 +1,17 @@
 # MediaWiki extensions developed by Microsoft
 
-Microsoft has developed a collection of MediaWiki extensions for use internally. Select extensions are
+Microsoft has developed a collection of MediaWiki extensions for internal use. Select extensions are
 currently being considered for open source release. These extensions will be made available under
 the MIT License. Volunteers who are employees of Microsoft are responsible for overseeing the open
 sourcing and maintenance of the extensions in conjunction with the original development team(s).
 Open source contributions from the community are welcome and will be subject to Microsoft's CLA.
+
+Microsoft's MediaWiki extensions are made publicly available on GitHub and will be officially maintained
+exclusively on Microsoft GitHub repos. While we recognize that many MediaWiki extension developers
+choose to host their extension source code on Wikimedia source control, we currently do not have plans
+to move our extension code from GitHub to Wikimedia source control. Please see the
+[Contributing](#contributing) and [Trademarks](#trademarks) section of this README for information
+on how to contribute to this repo and all other open source Microsoft repos on GitHub.
 
 ## Contributing
 
