@@ -1,0 +1,52 @@
+{
+  "name": "PandocUpload",
+  "version": "1.0.0",
+  "author": [
+    "Microsoft Corporation"
+  ],
+  "description": "File-to-article conversion option during upload process",
+  "license-name": "MIT",
+  "type": "other",
+  "AutoloadClasses": {
+    "PandocUpload": "PandocUpload.php",
+    "PandocUploadHooks": "PandocUpload.hooks.php",
+    "PandocUploadError": "PandocUploadError.php"
+  },
+  "MessagesDirs": {
+    "PandocUpload": [
+      "i18n"
+    ]
+  },
+  "Hooks": {
+    "UploadFormInitDescriptor": [
+      "PandocUploadHooks::onUploadFormInitDescriptor"
+    ],
+    "UploadComplete": [
+      "PandocUploadHooks::onUploadComplete"
+    ]
+  },
+  "SpecialPages": {
+    "PandocUpload": "PandocUploadError"
+  },
+  "ResourceModules": {
+    "ext.pandocUpload": {
+      "scripts": [
+        "ext.pandocUpload.js"
+      ],
+      "messages": [
+        "pandocupload-warning-unsupported-format",
+        "pandocupload-warning-title-length",
+        "pandocupload-warning-title-invalid-character",
+        "pandocupload-confirm-upload"
+      ],
+      "dependencies": [
+        "mediawiki.jqueryMsg"
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "modules",
+    "remoteExtPath": "Microsoft/PandocUpload"
+  },
+  "manifest_version": 1
+}

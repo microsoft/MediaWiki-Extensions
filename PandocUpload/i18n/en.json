@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Microsoft Corporation"
+        ]
+    },
+    "pandocupload": "Pandoc Upload",
+	"pandocupload-desc": "File-to-article conversion option during upload process",
+    "pandocupload-summary": "File-to-article conversion option during upload process",
+    "pandocupload-warning-unsupported-format": "$1 is an unsupported file format for conversion.",
+    "pandocupload-warning-title-length": "The article title is either too short or too long. Length is restricted to between $1 and $2 characters.",
+    "pandocupload-warning-title-invalid-character": "The article title contains invalid characters of the following: $1.",
+    "pandocupload-confirm-upload": "Your page is about to be created. You will receive an email when it's ready to view.",
+    "pandocupload-supported-formats-msg": "These file types can be converted to a wiki article: $1.",
+    "pandocupload-notification-email-subject": "$1, your new wiki article is ready to view.",
+    "pandocupload-notification-email-body": "$1, your recent file upload has been converted to a wiki article.\n\rThe article: {{canonicalurl:$2}}\n\rThe original file: {{canonicalurl:$3}}"
+}
