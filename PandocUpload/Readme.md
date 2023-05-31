@@ -7,7 +7,7 @@ This extension adds a new upload option in Special:Upload to allow optional conv
 #### Installation instruction
 Load the extension:
 ```php
-wfLoadExtension(PandocUpload);
+wfLoadExtension('PandocUpload');
 ```
 
 Specify path to pandoc in $wgPandocExecutablePath (run ```whereis pandoc``` on linux to get the pandoc binary location)
