@@ -24,4 +24,4 @@ To convert a file to an article, open "Special:Upload" page, select checkbox "Co
 
 ![image](https://github.com/Griboedow/MediaWiki-Extensions/assets/4194526/494de0ce-bfb1-472d-ab83-4a5b500ea481)
 
-The file will be saved and after that pandoc conversion will start. Please note, that the original fill will remain in uploads. 
+The file will be saved and after that pandoc conversion will start. Please note, that the original fill will remain in uploads. Images will not be automatically uploaded. 
