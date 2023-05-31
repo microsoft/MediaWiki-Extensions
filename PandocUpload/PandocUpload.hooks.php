@@ -103,7 +103,7 @@ class PandocUploadHooks {
         // generate the entire wikitext
         $newContent = new WikiTextContent( implode("\n", $output) );
 
-        $page->doEditContent( $newContent, "pandoc conversion", EDIT_FORCE_BOT, false, $user);
+        $page->doUserEditContent( $newContent, $user, "pandoc conversion");
 
         // send email for notification
         $subject = wfMessage('pandocupload-notification-email-subject')->params( $user->getName() )->plain();
