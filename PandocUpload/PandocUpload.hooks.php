@@ -8,6 +8,8 @@
  * @licence GNU General Public Licence 2.0 or later
  */
 
+use MediaWiki\Shell\Shell;
+
 class PandocUploadHooks {
 
   private static $conversionArray = array(
@@ -85,15 +87,14 @@ class PandocUploadHooks {
           throw new MWException(wfMessage("pandocupload-warning-unsupported-format")->params( $ext )->plain()); 
         }
         
-        $output = array();
-        $command = sprintf(
-          '"%s" --from=%s --to=%s "%s" 2>&1',
+        $res = Shell::command(
           $wgPandocExecutablePath,
-          self::$conversionArray[$ext],
-          "mediawiki",
+          '--from=' . self::$conversionArray[$ext],
+          '--to=mediawiki',
           $file->getLocalRefPath()
-        );
-        exec( $command, $output );
+        )->includeStderr()
+        ->execute();
+        $output = explode( "\n", $res->getStdout() );
         // post processing: transform regular tables to wikitables
         foreach ( $output as &$line ) {
           if ( $line == "{|" ) {
